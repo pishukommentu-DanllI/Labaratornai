@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./assets/css/style_main.css">
+
+    <title>Labaratorna</title>
+</head>
+<body>
+    <header class="header">
+        <!-- создаем контейнер для header -->
+        <div class="header__contaner">
+            <!-- блок с картинкой логотипа -->
+            <div class="header__contaner__BlockLogo">
+                <img src="./assets/img/xbox.svg">
+            </div>
+
+            <!-- создаем навигацию -->
+            <nav class="header__contaner__nav">
+                <!-- список навигиции -->
+                <ul class="header__contaner__nav__list">
+                    <li class="header__contaner__nav_item">
+                        
+                        <a href="#" class="header__contaner__nav_item_link white_first">Games</a>
+                        <!-- стрелочка -->
+                        <button class="header__contaner__nav_item_btn"><img src="./assets/img/Shape.svg"></button>
+                    </li>
+
+                    <li class="header__contaner__nav_item">
+                    
+                        <a href="#" class="header__contaner__nav_item_link ">Consoles</a>
+                        <button class="header__contaner__nav_item_btn"><img src="./assets/img/Shape.svg"></button>
+                    </li>
+    
+                    <li class="header__contaner__nav_item">
+                        
+                        <a href="#" class="header__contaner__nav_item_link ">Community</a>
+                    </li>
+    
+                    <li class="header__contaner__nav_item">
+                        
+                        <input type="text" placeholder="Search" class="header__contaner__nav_item_input input">
+                    </li>
+    
+                    <li class="header__contaner__nav_item">
+                        <div class="header__contaner__nav_item__BlokcImg">
+                            <a href="./registration.html"><img class="header__contaner__nav_item__Img" src="./assets/img/user.svg"></a>
+                        </div>
+
+                        <a href="./registration.html" class="header__contaner__nav_item_link ">My XBOX</a>
+    
+                        <button class="header__contaner__nav_item_btn"><img src="./assets/img/Shape.svg"></button>
+                    </li>
+                </ul>
+                <!-- Бургер для адаптива -->
+                <ul class="header__contaner__nav_ListBugrger">
+
+                    <li class="header__contaner__nav_ItemBugrger ">
+                        <input type="text" placeholder="Search" class="header__contaner__nav_ItemBugrger_input input">
+                    </li>
+    
+                    <li class="header__contaner__nav_ItemBugrger">
+                        <div class="header__contaner__nav_ItemBugrger__BlockImgBurger"><img src="./assets/img/burger.png"></div>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="one">
+        <div class="one__contaner">
+            <div class="one__contaner__BlockImgArrow left"><button type="button"><img class="one__contaner__Arrow left" src="./assets/img/icon-prev.svg"></button></div>
+
+
+            <div class="one__contaner__BlockInfo">
+                <p class="one__contaner__Blockinfo__MainText white TextRoboto">Star Wars</p>
+                <p class="one__contaner__Blockinfo__Text white TextRoboto">Battlefront II</p>
+
+                <div class="one__contaner__BlockInfo__Btn">
+                    <a href="#" class="one__contaner__Btn green_btn litle_btn white TextRoboto">Watch Trailer</a>
+                    <a href="#" class="one__contaner__Btn grow_btn litle_btn white TextRoboto">Explore Games</a>
+                </div>
+
+            </div>
+
+            <div class="one__contaner__BlockImgArrow right"><button type="button"><img class="one__contaner__Arrow left" src="./assets/img/icon-next.svg"></button></div>
+            
+        </div>
+
+    </section>
+
+    <section class="two">
+        <!-- Создаем контейнер -->
+        <div class="two__contaner">
+            <!-- Блок с главным текстом -->
+            <div class="two__contaner__BlokcMain">
+                <div class="two__contaner__BlokcLogo">
+                    <img src="./assets/img/XBoxsvg.svg" class="two__contaner__LogoImg">
+                </div>
+
+                <p class="two__contaner__BlokcLogo__MainText white TextRoboto">The best value</p>
+                <p class="two__contaner__BlokcLogo__Text white TextRoboto">in games and entertainment</p>
+            </div>
+
+            <!-- Список карточек -->
+            <ul class="two__contaner__list">
+                <!-- Сама карточка -->
+                <li class="two__contaner__item">
+                    <!-- Картинка в каточке -->
+                    <div class="two__contaner__item__BlockImg">
+                        <img class="two__contaner__item__Img" src="./assets/img/xbox-one-x.svg">
+                    </div>
+                    <!-- Текст в карточке -->
+                    <div class="two__contaner__item__BlolockInfo">
+                        <div class="two__contaner__item__BlolockInfo__text">
+                            <p class="two__contaner__item__BlolockInfo__MainText TextRoboto">XBOX ONE X</p>
+                            <p class="two__contaner__item__BlolockInfo__Text TextRoboto">Faster Processing Smoother Gameplay</p>
+                        </div>
+                        <!-- Кнопка -->
+                        <a href="#" class="two__contaner__item__BlolockInfo_btn green_btn TextRoboto white">Explore Consoles & Accessories</a>
+                    </div>
+                </li>
+
+                <li class="two__contaner__item">
+                    <div class="two__contaner__item__BlockImg">
+                        <img class="two__contaner__item__Img" src="./assets/img/Mixer.svg">
+                    </div>
+
+                    <div class="two__contaner__item__BlolockInfo">
+                        <div class="two__contaner__item__BlolockInfo__text">
+                            <p class="two__contaner__item__BlolockInfo__MainText TextRoboto">mixer Streaming</p>
+                            <p class="two__contaner__item__BlolockInfo__Text TextRoboto">The Next Generation Of Life Game Streaming</p>
+                        </div>
+
+                        <a href="#" class="two__contaner__item__BlolockInfo_btn green_btn TextRoboto white">Start Watching mixer</a>
+                    </div>
+                </li>
+
+                <li class="two__contaner__item">
+                    <div class="two__contaner__item__BlockImg">
+                        <img class="two__contaner__item__Img" src="./assets/img/Games_Gold.svg">
+                    </div>
+
+                    <div class="two__contaner__item__BlolockInfo">
+                        <div class="two__contaner__item__BlolockInfo__text">
+                            <p class="two__contaner__item__BlolockInfo__MainText TextRoboto">Free Games Every Month</p>
+                            <p class="two__contaner__item__BlolockInfo__Text TextRoboto">Get up to $700 in free games</p>
+                        </div>
+
+                        <a href="#" class="two__contaner__item__BlolockInfo_btn green_btn TextRoboto white">Get Free Games</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="three">
+        <!-- Контейнер -->
+        <div class="three__contaner">
+            <!-- Блок со всей информации -->
+            <div class="three__contaner__BlokcInfo">
+                <!-- блок с текстом -->
+                <div class="three__contaner__BlokcInfo__TextBlokc">
+                    <p class="three__contaner__BlokcInfo__TextMain TextRoboto white">Xbox Design Lab</p>
+                    <p class="three__contaner__BlokcInfo__Text TextRoboto white">Make yours one in a billion with new colors, metallic finishes and rubberized grips.</p>
+                </div>
+                <!-- Блок с кнопками -->
+                <div class="three__contaner__BlokcInfo__BtnBlokc">
+                    <a href="#" class="TextRoboto grow_btn three__contaner__BlokcInfo__BtnGrow white">Design Yours</a>
+                    <a href="#" class="TextRoboto green_btn three__contaner__BlokcInfo__BtGreen white">Explore Consoles & Accessories</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <!-- Контейнер -->
+        <div class="footer__contaner">
+            <!-- Список для столбца -->
+            <ul class="footer__contaner__list">
+                <!-- Столбец для Xbox-->
+                <li class="footer__contaner__item">
+                    <!-- Список для  ссылок-->
+                    <ul class="footer__contaner__item__list">
+                        <!-- Элемент со ссылкой -->
+                        <li class="footer__contaner__item__item">
+                            <a class="footer__contaner__item__item_MainText TextRoboto" href="#">XBOX</a>
+                        </li>
+
+                        <li class="footer__contaner__item__item">
+                            <a class="footer__contaner__item__item_Text TextRoboto"  href="#">Support</a>
+                        </li>
+
+                        <li class="footer__contaner__item__item">
+                            <a class="footer__contaner__item__item_Text TextRoboto"  href="#">Contact us</a>
+                        </li>
+
+                        <li class="footer__contaner__item__item">
+                            <a class="footer__contaner__item__item_Text TextRoboto"  href="#">Privacy & cookies </a>
+                        </li>
+
+                        <li class="footer__contaner__item__item">
+                            <a class="footer__contaner__item__item_Text TextRoboto"  href="#">Terms of use</a>
+                        </li>
+
+
+                    </ul>
+
+                </li>
+                <!-- Столбец для Developers -->
+                <li class="footer__contaner__item">
+
+                    <ul class="footer__contaner__item__list">
+
+                        <li class="footer__contaner__item__item">
+                            <a class="footer__contaner__item__item_MainText TextRoboto"  href="#">Developers</a>
+                        </li>
+
+                        <li class="footer__contaner__item__item">
+                            <a class="footer__contaner__item__item_Text TextRoboto"  href="#">Games</a>
+                        </li>
+
+                        <li class="footer__contaner__item__item">
+                            <a class="footer__contaner__item__item_Text TextRoboto"  href="#">Windows 10</a>
+                        </li>
+
+                        <li class="footer__contaner__item__item">
+                            <a class="footer__contaner__item__item_Text TextRoboto"  href="#">Creators Program</a>
+                        </li>
+
+                        <li class="footer__contaner__item__item">
+                            <a class="footer__contaner__item__item_Text TextRoboto"  href="#">Designed for XBOX</a>
+                        </li>
+
+
+
+                    </ul>
+                </li>
+                <!-- Столбец для Folow Us -->
+                <li class="footer__contaner__item">
+
+                    <ul class="footer__contaner__item__list">
+
+                        <li class="footer__contaner__item__item">
+                            <p class="footer__contaner__item__item_MainText TextRoboto" >Follow Us</p>
+                        </li>
+                        <!-- Список иконок-ссылок -->
+                        <li class="footer__contaner__item__item">
+                            <div class="footer__contaner__item__item__ContanerImg">
+                                <div class="footer__contaner__item__item__BlokcImg">
+                                    <a  href="#"><img src="./assets/img/Faacebook.svg" class="footer__contaner__item__item__Img"></a>
+                                </div>
+
+                                <div class="footer__contaner__item__item__BlokcImg">
+                                    <a href="#"><img src="./assets/img/Twitter.svg" class="footer__contaner__item__item__Img"></a>
+                                </div>
+
+                                <div class="footer__contaner__item__item__BlokcImg">
+                                    <a href="#"><img src="./assets/img/Instagram.svg" class="footer__contaner__item__item__Img"></a>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer__AutorBlock">
+            <p class="footer__AutorBlock TextRoboto">English (United States)</p>
+            <p class="footer__AutorBlock TextRoboto"> © Microsoft 2017</p>
+        </div>
+    </footer>
+
+</body>
+</html>

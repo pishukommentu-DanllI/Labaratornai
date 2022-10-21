@@ -1,0 +1,594 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fotns/Roboto-Regular.ttf');
+    font-weight: 400;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+  
+li{
+    list-style: none;
+  }
+  
+a{
+    text-decoration: none;
+}
+/* Убираем стили у кнопке, чтобы не мешали */
+button{
+    outline: none; /* Для синий ободки */
+    border: 0;
+    background: transparent;
+}
+
+.header{
+    background: #373A3C;
+    border-radius: 4px;
+    
+    padding: 23px 163px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+/* прописываем header flex и space-between, чтобы элементы разошлись по краям*/
+.header__contaner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1069px;
+
+    width: 100%;
+    
+
+
+}
+/* Выключаем по дефолту бургер */
+.header__contaner__nav_ListBugrger{
+    display: none;
+}
+
+
+.header__contaner__nav_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__contaner__nav_item_link{
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+
+    color: rgba(255, 255, 255, 0.5);
+
+    margin-right: 15px;
+
+    
+}
+/* Класс для первого эелмента навигации.  */
+.white_first{
+    color: #FFFFFF;
+}
+
+.header__contaner__nav__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Каждому эелменту кроме последенго добавляем margin */
+.header__contaner__nav_item:not(:last-child){
+    margin-right: 25px;
+}
+
+.input{
+    padding: 8px 0px 8px 15px;
+
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 21px;
+
+
+    color: #435766;
+
+    mix-blend-mode: normal;
+
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+
+}
+
+.header__contaner__nav_item__Img{
+    margin-right: 9px;
+}
+
+
+.one{
+    /* Импортируем картинку */
+    background: url('../img/Star-Wars-Battlefront-II-combat.png') no-repeat center center / cover;
+
+    width: 100%;
+    height: 644px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Добовляю flex контайнеру */
+.one__contaner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    padding: 0px 4.1%;
+    position: relative;
+
+    max-width: 2152px;
+
+}
+
+/* Смещаем блок текста */
+.one__contaner__BlockInfo{
+    position: absolute;
+    right: 198px;
+}
+/* Общий класс для всего белого текста */
+.white{
+    color: #FFFFFF;
+}
+/* Общий класс для шрифта */
+.TextRoboto{
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.one__contaner__Blockinfo__MainText{
+    font-size: 36px;
+    line-height: 42px;
+
+}
+
+.one__contaner__Blockinfo__Text{
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.one__contaner__BlockInfo__Btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 134px;
+}
+/* Кроме последний кнопки добавляем margin */
+.one__contaner__Btn:not(:last-child){
+    margin-right: 13px;
+}
+
+/* общий класс для зеленой кнопки */
+.green_btn{
+    background: #8DD83D;
+}
+/* Для серой кнопки */
+.grow_btn{
+    background: #686C6F;
+
+}
+
+.one__contaner__Btn{
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.litle_btn{
+    padding: 8px 24px;
+}
+
+
+.two{
+    /* добавляем фон к блоку */
+    background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
+}
+.two__contaner{
+    /* добаляем флексы контенеру */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 155px 160px;
+}
+.two__contaner__list{
+    display: flex;
+
+
+}
+.two__contaner__item{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;  
+
+    flex: 1;
+}
+/* все кроме последнего margin */
+.two__contaner__item:not(:last-of-type){
+    margin-right: 65px;
+}
+/* Блоко тексат каторчики добоваляем флексы и ставим их в колону */
+.two__contaner__item__BlolockInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 22px 27px 21px;
+}
+.two__contaner__BlokcMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    margin-bottom: 43px;
+}
+
+.two__contaner__BlokcLogo__MainText{
+    font-size: 48px;
+    line-height: 56px;
+
+    text-align: center;
+    
+    margin-bottom: 20px;
+}
+
+.two__contaner__BlokcLogo__Text{
+    font-size: 36px;
+    line-height: 42px;
+
+    text-align: center;
+}
+.two__contaner__BlokcLogo{
+    margin-bottom: 16px;
+}
+
+/* Растягиваем картнку и блок */
+.two__contaner__item__BlockImg,
+.two__contaner__item__Img{
+    display: flex;
+
+    width: 100%;
+}
+
+
+.two__contaner__item__BlolockInfo__MainText{
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #435766;
+
+    margin-bottom: 13px;
+
+
+}
+
+.two__contaner__item__BlolockInfo__Text{
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #435766;
+
+    margin-bottom: 38px;
+
+
+
+}
+
+.two__contaner__item__BlolockInfo_btn{
+    padding: 20px 23px;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 21px;
+
+    text-align: center;
+}
+
+/* Добавление картинки на зданий фон секции */
+.three{
+    background: url('../img/Rectangle.svg') no-repeat center center / cover;
+}
+/* Добавляем padding контейнеру и выравниваем по центру по оси y */
+.three__contaner{
+    padding: 144px 167px 115px 167px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 916px;
+}
+/* нижний margin к текстовоому блоку*/
+.three__contaner__BlokcInfo__TextBlokc{
+    margin-bottom: 39px;
+}
+.three__contaner__BlokcInfo__TextMain{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+
+    margin-bottom: 10px;
+}
+
+
+.three__contaner__BlokcInfo__Text{
+    /* Задаем ширину тексту */
+    max-width: 530px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.three__contaner__BlokcInfo__BtGreen{
+    font-size: 16px;
+    line-height: 21px;
+
+    padding: 19px 52px 20px 23px;
+
+    border-radius: 4px;
+}
+/* стили для блока с кнопка в three секции */
+.three__contaner__BlokcInfo__BtnGrow{
+    font-size: 16px;
+    line-height: 21px;
+
+    padding: 20px 72px 19px 52px;
+
+    border-radius: 4px;
+
+    margin-right: 15px;
+}
+
+.three__contaner__BlokcInfo__BtnBlokc{
+    display: flex;
+}
+
+
+
+/* Фон футеру и pdding */
+.footer{
+    background: #373A3C;
+    padding: 50px 100px 38px 100px;
+}
+
+.footer__contaner{
+    padding: 0px 65px 49px 65px;
+    border-bottom: 1px solid #FFFFFF;;
+    margin-bottom: 20px;
+}
+
+.footer__contaner__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+
+}
+
+.footer__contaner__item__item{
+    margin-bottom: 30px;
+}
+.footer__contaner__item__item_MainText{
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #7DD42F;
+}
+.footer__contaner__item__item_Text,
+.footer__AutorBlock{
+   font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+
+
+.footer__contaner__item__item__ContanerImg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__AutorBlock{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Адаптация  для 1150px пикселей*/
+@media (max-width: 1150px){
+    /* Для второго контейнера wrap, чтобы переносился на новуб стрчку и распалзался по карям */
+    .two__contaner__list{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .two__contaner{
+        padding: 64px 100px 140px;
+    }
+
+    .two__contaner__item{
+        margin-bottom: 35px;
+    }
+    /* Убираем pdiing для элементов списка в второй секции*/
+    .two__contaner__item:not(:last-of-type){
+        margin-right: 0;
+    }
+    /* растягиваем картинку на всю ширину */
+    .two__contaner__item__Img{
+        width: 100%;
+    }
+    /* Уменьшаем размер текста */
+    .two__contaner__item__BlolockInfo__Text,
+    .two__contaner__item__BlolockInfo__MainText{
+        max-width: 258px;
+    }
+    .two__contaner__item{
+        flex: none;
+    }
+
+    
+
+
+} 
+@media (max-width: 840px) {
+
+    .two__contaner__list{
+        justify-content: center;
+    }
+
+    .two__contaner__item__BlolockInfo__Text,
+    .two__contaner__item__BlolockInfo__MainText{
+        text-align: center;
+    }
+    /* делаем центрирование тексту внутри блока с текстом в 3 секции */
+    .three__contaner__BlokcInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Добвляем перенос  к блоку с кнопкой*/
+    .three__contaner__BlokcInfo__BtnBlokc{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 278px;
+    }
+
+    .three__contaner__BlokcInfo__TextBlokc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Убираю margin блоку */
+    .three__contaner__BlokcInfo__BtnGrow{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .three__contaner__BlokcInfo__BtnGrow,
+    .three__contaner__BlokcInfo__BtGreen{
+        
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 1100px) {
+    /* pdiing header меньше для лучшей адаптивности */
+    .header{
+        padding: 23px 50px;
+    }
+
+}
+
+
+@media (max-width:860px) {
+    /* Делам бургер видимым */
+    .header__contaner__nav_ListBugrger{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* Ставим секции поиску margin */
+    .header__contaner__nav_ItemBugrger_input{
+        margin-right: 15px;
+    }
+    /* Убираеми навгиацую */
+    .header__contaner__nav__list{
+        display: none;
+    }
+
+    .one__contaner__BlockInfo{
+        position: unset;
+        right: 0;
+    }
+    /* центрируем текст */
+    .one__contaner__Blockinfo__MainText,
+    .one__contaner__Blockinfo__Text{
+        text-align: center;
+    }
+
+    .footer{
+        padding: 35px 50px 23px 50px;
+    }
+
+    
+}
+
+
+@media (max-width:460px){
+    /* убираем посик */
+    .input{
+        display: none;
+    }
+    .footer__contaner__item__item__BlokcImg:not(:last-of-type){
+        margin-right: 15px;
+    }
+    .one__contaner__Btn{
+        margin-bottom: 10px;
+        padding: 4px 10px;
+    } 
+
+    .footer__contaner__list{
+        justify-content: center;
+    }
+
+    .footer{
+        padding: 20px 25px 20px 25px;
+    }
+
+    .footer__contaner__item__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Даем блоку переносить,ся */
+    .footer__AutorBlock{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__AutorBlock:not(:last-of-type){
+        margin-bottom: 15px;
+        margin-right: 5px;
+    }
+    /* Делаем меньше padding для 2 секции*/
+    .two__contaner{
+        padding: 40px 20px 50px;
+    }
+    /* Делаем меньше pdding для 3 секции */
+    .three__contaner{
+        padding: 100px 30px 82px 30px;
+    }
+}
